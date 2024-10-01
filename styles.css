@@ -173,9 +173,8 @@ section{
     margin: auto 0;
 }
 
-.section__pic-container img {
+.section__pic-container .hero-img {
     border-radius: 50%;
-
 }
 
 .section__text{
@@ -188,7 +187,7 @@ section{
 }
 
 .section__text__p1{
-    /* font-size: 1.25rem; */
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -254,4 +253,65 @@ section{
 
  .btn-color-2:hover{
     border: 1px solid rgb(255,255,255);
+ }
+
+ /* About Section */
+
+ #about{
+    margin-top: 1rem;
+    position: relative;
+ }
+
+ .about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+ }
+
+ .about-details-container{
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .text-container{
+    margin: 2rem 0;
+ }
+
+ .about-containers , .about-details-container{
+    display: flex;
+ }
+
+ .about-pic{
+    border-radius: 2rem;
+ }
+
+ .arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+ }
+
+
+.info{
+    line-height: 1.7rem;
+}
+
+ .details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: 1px solid rgb(53, 53, 53);
+    border-color: rgb(163 , 163, 163);
+    text-align: center;
+ }
+
+ .section-container{
+    gap: 4rem;
+ }
+
+ .section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin : auto 0;
  }
