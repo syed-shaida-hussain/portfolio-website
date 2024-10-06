@@ -377,19 +377,21 @@ article .icon {
 }
 
 .project-img{
-    border-radius: 2rem;
-    width: 90%;
-    height : 90%
+    border-radius: 5px;
+    width: 15rem;
+    height : 8rem
 }
 
 .project-title{
-    margin: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
     color: black;
 }
 
 .project-btn{
     color: black;
     border-color: rgb(163,163,163);
+    padding: 0.5rem 1rem ;
 }
 
 /* Contact */
