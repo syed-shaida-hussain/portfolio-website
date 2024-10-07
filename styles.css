@@ -147,8 +147,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    margin: 5rem 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -163,7 +162,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: fit-content;
 }
 
 .section__pic-container {
@@ -346,14 +345,14 @@ section {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     gap: 2.5rem;
     justify-content: space-around;
 }
 
 article {
     display: flex;
-    width: 10rem;
-    justify-content: space-around;
+    width: 100%;
     gap: 0.5rem;
 }
 
@@ -400,7 +399,6 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
 }
 
 .contact-info-upper-container{
@@ -433,6 +431,5 @@ article .icon {
 /* Footer section */
 
 footer{
-    height: 26vh;
     margin: 0 1rem;
 }
