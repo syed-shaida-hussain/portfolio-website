@@ -4,6 +4,12 @@
     }
 }
 
+@media screen and (max-width : 1300px) {
+    .article-container{
+        align-items: normal;
+    }
+}
+
 @media screen and (max-width : 1200px) {
     #nav {
         display: none;
@@ -46,6 +52,12 @@
 
     .about-containers {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    article {
+        width: 100%;
     }
 }
 

@@ -341,7 +341,7 @@ section {
 }
 
 .article-container {
-    display: inline-flex;
+    display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
@@ -352,7 +352,7 @@ section {
 
 article {
     display: flex;
-    width: 100%;
+    width: 40%;
     gap: 0.5rem;
 }
 
