@@ -180,6 +180,9 @@ section {
 .section__text {
     align-self: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .section__text p {
@@ -304,7 +307,7 @@ section {
 
 .details-container {
     padding: 1.5rem;
-    flex: 1;
+    margin: auto;
     background: white;
     border-radius: 2rem;
     border: 1px solid rgb(53, 53, 53);
@@ -434,3 +437,69 @@ article .icon {
 footer{
     margin: 0 1rem;
 }
+
+
+ .internship-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: Arial, sans-serif;
+  }
+
+  .internship-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  .internship-card {
+    padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .internship-card:hover {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  }
+
+  .internship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  .internship-header h3 {
+    font-size: 18px;
+    color: #222;
+    margin: 0;
+  }
+
+  .internship-header .date {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .company {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .internship-card ul {
+    margin: 0;
+    padding-left: 18px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .internship-card li {
+    margin-bottom: 6px;
+  }
