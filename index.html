@@ -1,391 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaida Hussain | Frontend Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
-    <nav id="nav">
-        <div class="nav-logo">Shaida Hussain</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Shaida Hussain</div>
+
+    <nav class="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="nav-logo">Shaida Hussain</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <!-- <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Shaida Hussain Profile Picture" class="hero-img" />
-        </div> -->
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Shaida Hussain</h1>
-            <p class="section__text__p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/shaida-hussain-resume(2).pdf')">Download
-                    Resume</button>
-                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/github-142-svgrepo-com.svg" alt="My Github Profile"
-                    onclick="location.href ='https://github.com/syed-shaida-hussain'" class="icon" />
-                <img src="./assets/linkedin-round-svgrepo-com.svg" alt="My Linkedin Profile"
-                    onclick="location.href ='https://www.linkedin.com/in/syed-shaida-hussain/'" class="icon" />
-                <img src="./assets/twitter-round-svgrepo-com.svg" alt="My Twitter Profile"
-                    onclick="location.href ='https://x.com/shaida_hussain_'" class="icon" />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get to know more</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="text-container">
-                    <p class="info">Highly motivated IT graduate with a strong passion for building dynamic and
-                        user-friendly web
-                        applications. Possess expertise in ReactJS, Redux Toolkit, and advanced CSS, leveraging these
-                        frameworks to craft single-page web applications with optimized performance and clean
-                        architecture. Driven by a commitment to continuous learning and exceeding expectations, I thrive
-                        in collaborative environments and have a proven track record of bringing ambitious projects to
-                        life through innovative solutions</p>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/education-cap-svgrepo-com.svg" alt="education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>B.Sc Information Technology</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/double-arrow-down-svgrepo-com.svg" alt="arrow-icon" class="icon arrow"
-            onclick="location.href = './#experience'" />
-    </section>
-    <!-- <section class="internship-section">
-  <h2>Experience</h2>
 
-  <div class="internship-card">
-    <div class="internship-header">
-      <h3>React.js Intern</h3>
-      <span class="date">Aug 2025 – currently working</span>
+    <div class="nav-actions">
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg id="icon-moon" viewBox="0 0 24 24">
+          <path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+        </svg>
+        <svg id="icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5" />
+          <g stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="4" />
+            <line x1="12" y1="20" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" />
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="4" y2="12" />
+            <line x1="20" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" />
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" />
+          </g>
+        </svg>
+      </button>
+
+      <!-- Mobile Menu -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <p class="company">Almuqeet Systems</p>
-    <ul>
-      <li>Built responsive UIs using <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Redux toolkit</strong> and <strong>Tailwind CSS</strong>.</li>
-      <li>Collaborated with backend team to integrate <strong>REST APIs</strong> using <strong>RTK Query with axios</strong>.</li>
-      <li>Optimized components to reduce bundle size and improve performance.</li>
-    </ul>
-  </div>
-</section> -->
-
-<section class="internship-section">
-  <h2>Experience</h2>
-
-    <!-- Full-time Experience -->
-  <div class="internship-card">
-    <div class="internship-header">
-      <h3>Software Developer</h3>
-      <span class="date">Oct 2025 – Present</span>
-    </div>
-    <p class="company">Almuqeet Systems</p>
-    <ul>
-      <li>Contributed to a production-level unified chat system integrating Telegram and WhatsApp APIs, improving
-cross-platform communication efficiency by 30% using 
- <strong>React.js</strong> and <strong>Next.js</strong>.</li>
-      <li>Implementing state management with <strong>Redux Toolkit</strong> and handling API communication via <strong>RTK Query</strong>.</li>
-      <li>Working closely with designers and backend developers to deliver production-ready features.</li>
-      <li>Enhanced web accessibility, responsiveness, and frontend performance, resulting in a smoother experience for 1000+ active users.
-</li>
-    </ul>
   </div>
 
-  <!-- Internship Experience -->
-  <div class="internship-card">
-    <div class="internship-header">
-      <h3>React.js Intern</h3>
-      <span class="date">Aug 2025 – Sep 2025</span>
-    </div>
-    <p class="company">Almuqeet Systems</p>
-    <ul>
-      <li>Built responsive UIs using <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Redux Toolkit</strong>, and <strong>Tailwind CSS</strong>.</li>
-      <li>Collaborated with backend team to integrate <strong>REST APIs</strong> using <strong>RTK Query</strong> and <strong>Axios</strong>.</li>
-      <li>Optimized components to improve performance and reduce bundle size.</li>
-    </ul>
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <h1>Hello,<br>Shaida here</h1>
+    
+
+  <p class="hero-text">
+    I am a <span class="hero-tag">Frontend Developer</span> with production experience in React.js, Next.js, and Redux Toolkit.
+    Focused on performance, accessibility, and clean UI architecture.
+  </p>
+
+  <div class="hero-actions">
+    <a href="./assets/shaida-hussain-resume(2).pdf" class="btn primary">Download Resume</a>
+    <a href="#contact" class="btn secondary">Contact Me</a>
   </div>
 
-
+  <div class="socials">
+    <a href="https://github.com/syed-shaida-hussain" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/syed-shaida-hussain/" target="_blank">LinkedIn</a>
+    <a href="https://x.com/shaida_hussain_" target="_blank">Twitter</a>
+  </div>
 </section>
 
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>Tailwind CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>React.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>Next.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>Redux-toolkit</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>Node js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>Express js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/tick-circle-svgrepo-com.svg" alt="icon" class="icon" />
-                            <div>
-                                <h3>MongoDB</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/double-arrow-down-svgrepo-com.svg" alt="arrow-icon" class="icon arrow"
-            onclick="location.href = './#projects'" />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (123).png" alt="project 1 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">ExpireTrack</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/expiry-reminder-app'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://expiretrack.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (99).png" alt="project 1 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">MotivatorAI</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/motivatorAI'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://motivator-ai-two.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (112).png" alt="project 2 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Discover Kashmir</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/discover-kashmir'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://discover-kashmir.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (113).png" alt="project 3 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Fashion hub</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/Redux-ecom-app'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://fashions-hub.netlify.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (97).png" alt="project 4 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Data visualization app</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/roc8-moonshot-q2'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://roc8-moonshot-visualization.vercel.app'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets//Screenshot (114).png" alt="project 5 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Soccer Flux</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/soccer-flux'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://soccer-flux.netlify.app/home'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (115).png" alt="project 6 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Note Taking App</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/Notes-app'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://markkdown.netlify.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (116).png" alt="project 7 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Thorain</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/weather-forecasting-app'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://thorain.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (98).png" alt="project 8 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Email listing app</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/outlook-clone'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://roc8-moonshot-q1.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot (117).png" alt="project 9 image" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Quiz App</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://github.com/syed-shaida-hussain/Quiz-app'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href = 'https://do-u-know.vercel.app/'">Live
-                            Demo</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/double-arrow-down-svgrepo-com.svg" alt="arrow-icon" class="icon arrow"
-            onclick="location.href = './#contact'" />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/experience-svgrepo-com.svg" alt="email icon" class="icon contact-icon">
-                <p><a href="mailto:syedshaida59991@gmail.com">syedshaida59991@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/experience-svgrepo-com.svg" alt="Linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/syed-shaida-hussain/">Linkedin</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </footer>
-    <script src="index.js"></script>
-</body>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-text">
+    Frontend Developer with production experience building scalable, user-centric web applications using
+    React.js, Next.js, and Redux Toolkit. Currently working as a Software Developer, contributing to real-world
+    products including a unified chat system integrating Telegram and WhatsApp APIs. Passionate about performance,
+    accessibility, and building clean, maintainable UI architectures in collaborative environments.
+  </p>
+</section>
 
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Frontend</h3>
+      <div class="skill-tags">
+        <span>HTML</span><span>CSS</span><span>Tailwind CSS</span>
+        <span>JavaScript</span><span>React.js</span><span>Next.js</span>
+        <span>Redux Toolkit</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Backend</h3>
+      <div class="skill-tags">
+        <span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-card">
+      <h3>Software Developer</h3>
+      <p class="timeline-meta">Almuqeet Systems · Oct 2025 – Present</p>
+      <ul class="gap">
+        <li>Built a Unified chat system integrating Telegram & WhatsApp</li>
+        <li>Scalable UI components using React.js & Next.js</li>
+        <li>State management with Redux Toolkit & RTK Query</li>
+        <li>Performance & accessibility improvements for 1000+ users</li>
+      </ul>
+    </div>
+
+    <div class="timeline-card">
+      <h3>Frontend developer Intern</h3>
+      <p class="timeline-meta">Almuqeet Systems · Aug 2025 – Sep 2025</p>
+      <ul class="gap">
+        <li>Responsive UI with React.js & Next.js</li>
+        <li>REST API integration using Axios & RTK Query</li>
+        <li>Bundle size optimization</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+    <article class="project-card">
+      <div class="project-image">
+        <img src="./assets/Screenshot (112).png" alt="Discover Kashmir">
+      </div>
+      <div class="project-content">
+        <h3>Discover Kashmir</h3>
+        <p>Tourism-focused informational website.</p>
+        <div class="project-links">
+          <a href="https://github.com/syed-shaida-hussain/discover-kashmir" target="_blank">GitHub</a>
+          <a href="https://discover-kashmir.vercel.app/" target="_blank">Live</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-image">
+        <img src="./assets/Screenshot (99).png" alt="MotivatorAI">
+      </div>
+      <div class="project-content">
+        <h3>MotivatorAI</h3>
+        <p>AI-powered motivation generator.</p>
+        <div class="project-links">
+          <a href="https://github.com/syed-shaida-hussain/motivatorAI" target="_blank">GitHub</a>
+          <a href="https://motivator-ai-two.vercel.app/" target="_blank">Live</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-image">
+        <img src="./assets/Screenshot (123).png" alt="ExpireTrack">
+      </div>
+      <div class="project-content">
+        <h3>ExpireTrack</h3>
+        <p>Expiry reminder web application.</p>
+        <div class="project-links">
+          <a href="https://github.com/syed-shaida-hussain/expiry-reminder-app" target="_blank">GitHub</a>
+          <a href="https://expiretrack.vercel.app/" target="_blank">Live</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-card contact-items">
+    <a href="mailto:syedshaida59991@gmail.com" class="contact-item">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">syedshaida59991@gmail.com</span>
+    </a>
+
+    <a href="tel:+919149701175" class="contact-item">
+      <span class="contact-label">Phone</span>
+      <span class="contact-value">+91 9149701175</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="mailto:syedshaida59991@gmail.com">Email</a>
+      <a href="tel:+919149701175">Phone</a>
+      <a href="https://github.com/syed-shaida-hussain" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/syed-shaida-hussain/" target="_blank">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2026 Shaida Hussain</p>
+  </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+  const body = document.body;
+  const themeToggle = document.getElementById("theme-toggle");
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileNav = document.getElementById("mobile-nav");
+
+  /* =====================
+     THEME TOGGLE
+  ===================== */
+  if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light");
+  }
+
+  themeToggle.addEventListener("click", () => {
+    body.classList.toggle("light");
+    localStorage.setItem(
+      "theme",
+      body.classList.contains("light") ? "light" : "dark"
+    );
+  });
+
+  /* =====================
+     MOBILE MENU TOGGLE
+  ===================== */
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mobileNav.classList.toggle("active");
+    menuToggle.classList.toggle("active", isOpen);
+  });
+
+  /* Close menu when clicking a link */
+  document.querySelectorAll(".mobile-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+      menuToggle.classList.remove("active");
+    });
+  });
+</script>
+
+
+</body>
 </html>
